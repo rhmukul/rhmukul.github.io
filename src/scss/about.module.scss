@@ -1,0 +1,80 @@
+$colorfullText: #f75023;
+
+.contentBlock{
+    display: flex;    
+    gap: 30px;
+    margin-top: 35px;
+
+    & > .imageBlock{
+        display: block;
+        width: 45%;
+        max-width: 100%;
+
+        & > img{
+            width: 100%; height: 100%; object-fit: contain;
+        }
+    }
+
+    & > .infoBlock{
+        display: block;
+        width: 55%; max-width: 100%;
+
+        & > h3{
+            font-family: Righteous;
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0; color: #666;
+
+            & > span{                
+                font-size: 32px;
+                color: #1eabea
+            }
+        }
+
+        & > h4{            
+            font-size: 28px;
+            padding: 10px 0;
+            margin: 0; color: #666;
+
+            & > span{
+                font-size: 30px; font-weight: 500;
+                color: #1cbe59
+            }
+        }
+
+        & > h5{
+            font-family: Audiowide;
+            font-size: 24px; font-weight: 500;
+            margin: 0; color: #444;
+
+            & > span{
+                color: $colorfullText
+            }
+        }
+
+        & > p{
+            font-family: Charm;
+            font-size: 20px; font-weight: 500;
+            color: #333
+        }
+
+        & > .hireMeBtn > a{
+            text-decoration: none;
+            color: #fff; background-color: $colorfullText;
+            display: inline-block;
+            font-family: Audiowide;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 50px;
+            border: 2px solid $colorfullText;
+            padding: 8px 25px;
+            position: relative;
+            overflow: hidden;
+            transition: all .3s ease;
+            &:hover{
+                background-color: transparent;
+                color: #313131
+            }
+        }
+    }
+}

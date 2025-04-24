@@ -1,0 +1,33 @@
+$colorfullText: #f75023;
+$headerHeight: 60;
+
+.navigation{
+    margin-left: auto;
+
+    & > ul {
+        display: flex;
+        align-items: center;
+        gap: 25px; margin: 0;
+        list-style: none;
+
+        & > li {
+            display: flex;
+            font-family: Audiowide;
+            font-size: 14px;
+            font-weight: 600;
+
+            & > a{
+                display: block;
+                line-height: #{$headerHeight}px;
+                padding: 0 10px;
+                color: #313131;
+                cursor: pointer;
+
+                &.active{
+                    border-bottom: 2px solid $colorfullText;
+                    color: $colorfullText
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$colorfullText: #f75023;
+
+.contentBlock{
+    display: block;
+
+    .skill_info{
+        display: flex;
+        align-items: center;
+        gap: 5px; margin: 25px 0 5px;
+        font-family: Charm;
+        font-size: 16px; font-weight: 600;
+        color: #444;
+
+        & > .title{
+            color: #666
+        }
+
+        & > .value{
+            margin-left: auto;
+        }
+    }
+}

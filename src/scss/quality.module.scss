@@ -1,0 +1,48 @@
+$colorfullText: #f75023;
+
+.contentBlock{
+    display: block;
+
+    .labelStyle{
+        font-family: Audiowide;
+        font-size: 26px;        
+    }
+    
+    .itemBlock{
+        display: block; position: relative; margin-top: 15px;
+        border-left: 1px solid #1a91c4;
+        padding: 25px 0 0 25px;
+
+        & > span{
+            position: absolute;
+            left: -12px;
+            top: 30px;
+            background-color: #fff;
+            border: 1px solid #1a91c4;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            z-index: 5;       
+        }
+
+        & > .degreeTitle{
+            font-family: Righteous;
+            font-size: 22px;
+            color: #1a91c4
+        }
+        
+        & > .instituteName{
+            font-size: 18px;
+
+            & > small{
+                font-family: Righteous;
+                font-size: 13px;
+            }
+        }
+
+        & > .otherRoles{
+            font-family: Charm;
+            font-size: 14px;
+        }
+    }
+}
