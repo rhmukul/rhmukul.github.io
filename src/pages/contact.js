@@ -29,7 +29,7 @@ const SocialLinks = (props) => {
         props.items.map(v => {
             return (
                 <a className={v.class} href={v.url} target="_blank" rel="noreferrer">
-                    {v.icon?<i className={v.icon}></i>:v.name}
+                    {v.icon ? <i className={v.icon}></i> : v.name}
                 </a>
             )
         })
@@ -47,14 +47,14 @@ const Contact = () => {
                 <Row>
                     <Col md={6}>
                         <div className={contactStyle.info_block}>
-                            <h4 className="mb-3">Contact with email</h4>                            
+                            <h4 className="mb-3 my-3">Contact with email</h4>
                             <div><a href="mailto:rh_mukul@yahoo.com">rh_mukul@yahoo.com</a></div>
                             <div><a href="mailto:rhmukul@gmail.com">rhmukul@gmail.com</a></div>
-                        </div>                        
+                        </div>
                     </Col>
                     <Col md={6}>
                         <div className={contactStyle.info_block}>
-                            <h4 className="mb-3">Contact with social media</h4>
+                            <h4 className="mb-3 my-3">Contact with social media</h4>
                             <div className={contactStyle.slinks}>
                                 <SocialLinks items={socialList} />
                             </div>

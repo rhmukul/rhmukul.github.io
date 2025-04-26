@@ -1,42 +1,63 @@
 $colorfullText: #f75023;
 
-.contentBlock{
-    display: block;    
-    
-    .itemBlock{
-        display: block; position: relative; margin: 15px 0;
-        border: 1px solid #ddd; height: 300px;
-        padding: 0 15px; border-radius: 5px;
+.contentBlock {
+    display: block;
+
+    .itemBlock {
+        display: block;
+        position: relative;
+        margin: 15px 0;
+        border: 1px solid #ddd;
+        height: 300px;
+        padding: 0 15px;
+        border-radius: 5px;
         box-shadow: 0 0 5px #ddd;
 
-        & > .header{
+        &>.header {
             display: flex;
-            gap: 15px; height: 60px;
+            gap: 15px;
+            height: 60px;
             align-items: center;
             font-family: Righteous;
             border-bottom: 1px solid #ddd;
             color: #006699;
 
-            & > h4{
-                font-size: 22px; font-weight: 600;
+            &>h4 {
+                font-size: 22px;
+                font-weight: 600;
             }
 
-            & > i{
+            &>i {
                 font-size: 40px;
                 color: #666
             }
         }
 
-        & > p{
-            margin: 15px 0; font-family: Mogra; font-size: 14px;
+        &>p {
+            margin: 15px 0;
+            font-family: Mogra;
+            font-size: 14px;
         }
 
-        & > div{
-            margin: 15px 0; font-family: Audiowide; font-size: 14px; font-weight: 600; color: #666;
+        &>div {
+            margin: 15px 0;
+            font-family: Audiowide;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
 
-            & > em{
+            &>em {
                 font-weight: normal;
             }
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+    .contentBlock {
+        .itemBlock {
+            height: auto;
+        }
+    }
+
 }

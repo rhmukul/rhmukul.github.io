@@ -14,7 +14,7 @@ const developedbyRowStyles = {
     display: 'flex',
     alignItems: 'center',
     gap: '5px',
-    fontFamily: 'Mogra',    
+    fontFamily: 'Mogra',
     justifyContent: 'right'
 }
 const backToTopStyles = {
@@ -35,10 +35,10 @@ const Footer = () => {
             <div className={mainStyle.container}>
                 <div className={mainStyle.headerHeight}>
                     <Row>
-                        <Col xs={6}>
+                        <Col xs={12} md={6} lg={6}>
                             <div style={copyrightRowStyles}>Md. Rokibul Hossain. All rights reserved © {currentYear}</div>
                         </Col>
-                        <Col xs={6}>
+                        <Col xs={12} md={6} lg={6}>
                             <div style={developedbyRowStyles}>Developed by Me</div>
                         </Col>
                     </Row>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <i className="fa fa-arrow-up"></i>
             </BackToTop>
         </footer>
-    )    
+    )
 }
 
 export default Footer;

@@ -1,61 +1,75 @@
-$headerHeight: 60;
+$headerHeight: 90;
 
-.contentBlock{
+.contentBlock {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-top: #{$headerHeight}px;
+    padding-top: #{$headerHeight}px;
 }
-.details{
+
+.details {
     width: 50%;
     padding-right: 20px;
 }
+
 .hello h3 {
     font-family: Lobster;
-    font-size: 25px;    
+    font-size: 25px;
 }
-.orangeText {    
-    color: #f75023!important;
+
+.orangeText {
+    color: #f75023 !important;
 }
-.name{
+
+.name {
     margin-bottom: 13px;
-    h3{
+
+    h3 {
         font-family: Righteous;
         font-size: 48px;
         margin: 20px 0;
         color: #444
     }
 }
-.job{
+
+.job {
     margin-bottom: 23px;
-    & > p {
-        font-size: 32px;        
-        & > span{
+
+    &>p {
+        font-size: 32px;
+
+        &>span {
             font-weight: 600;
             margin-left: 10px;
         }
     }
 }
-.greenText{
+
+.greenText {
     color: #1cbe59
 }
-.text{
+
+.text {
     font-size: 18px;
     margin-bottom: 30px;
 }
-.button{
+
+.button {
     display: flex;
     align-items: center;
 }
-.dizme_tm_button{
+
+.dizme_tm_button {
     width: auto;
     height: auto;
     clear: both;
     float: left;
 }
-.anchor{
+
+.anchor {
     text-decoration: none;
-    color: #fff; background-color: #f75023;
+    color: #fff;
+    background-color: #f75023;
     display: inline-block;
     font-family: Audiowide;
     font-weight: 500;
@@ -65,32 +79,91 @@ $headerHeight: 60;
     position: relative;
     overflow: hidden;
     transition: all .3s ease;
-    &:hover{
+
+    &:hover {
         background-color: transparent;
         color: #313131
     }
 }
-.social{
-    position: relative;
-    padding-left: 25px;        
 
-    & > ul{
+.social {
+    position: relative;
+    padding-left: 25px;
+
+    &>ul {
         display: flex;
         align-items: center;
-        & > li{
+
+        &>li {
             list-style: none;
         }
     }
 }
-.photoBlock{
+
+.photoBlock {
     display: block;
     position: relative;
     margin-left: auto;
 
-    & > .image{
-        width: 510px; height: 510px;    
-        & > img{
-            width: 100%; height: 100%; object-fit: contain;
+    &>.image {
+        width: 510px;
+        height: 510px;
+
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentBlock {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .name {
+        h3 {
+            font-size: 38px;
+            margin: 20px 0;
+        }
+    }
+
+    .job {
+        &>p {
+            font-size: 28px;
+
+            &>small {
+                display: block;
+            }
+
+            &>span {
+                display: block;
+                margin-left: 0;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .photoBlock {
+        display: block;
+        position: relative;
+        margin-left: auto;
+
+        &>.image {
+            width: 100%;
+            height: 350px;
         }
     }
 }

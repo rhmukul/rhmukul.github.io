@@ -1,19 +1,22 @@
 $colorfullText: #f75023;
 
-.contentBlock{
+.contentBlock {
     display: block;
 
-    .labelStyle{
+    .labelStyle {
         font-family: Audiowide;
-        font-size: 26px;        
+        font-size: 26px;
+        margin: 20px 0;
     }
-    
-    .itemBlock{
-        display: block; position: relative; margin-top: 15px;
+
+    .itemBlock {
+        display: block;
+        position: relative;
+        margin-top: 15px;
         border-left: 1px solid #1a91c4;
         padding: 25px 0 0 25px;
 
-        & > span{
+        &>span {
             position: absolute;
             left: -12px;
             top: 30px;
@@ -22,25 +25,25 @@ $colorfullText: #f75023;
             border-radius: 50%;
             width: 24px;
             height: 24px;
-            z-index: 5;       
+            z-index: 5;
         }
 
-        & > .degreeTitle{
+        &>.degreeTitle {
             font-family: Righteous;
             font-size: 22px;
             color: #1a91c4
         }
-        
-        & > .instituteName{
+
+        &>.instituteName {
             font-size: 18px;
 
-            & > small{
+            &>small {
                 font-family: Righteous;
                 font-size: 13px;
             }
         }
 
-        & > .otherRoles{
+        &>.otherRoles {
             font-family: Charm;
             font-size: 14px;
         }

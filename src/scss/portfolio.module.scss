@@ -1,14 +1,16 @@
 $colorfullText: #f75023;
 
-.contentBlock{
-    display: block;    
-    
-    .itemBlock{
-        display: block; position: relative; margin-top: 15px;
+.contentBlock {
+    display: block;
+
+    .itemBlock {
+        display: block;
+        position: relative;
+        margin-top: 15px;
         // border-left: 1px solid #1a91c4;
         // padding: 25px 0 0 25px;
 
-        & > span{
+        &>span {
             position: absolute;
             left: -12px;
             top: 30px;
@@ -17,37 +19,50 @@ $colorfullText: #f75023;
             border-radius: 50%;
             width: 24px;
             height: 24px;
-            z-index: 5;       
+            z-index: 5;
         }
 
-        .labelStyle{
+        .labelStyle {
             font-family: Audiowide;
-            font-size: 22px;        
+            font-size: 22px;
         }
 
-        .infoStyle{
+        .infoStyle {
             font-family: Macondo;
             font-size: 16px;
         }
 
-        .img{
+        .img {
             display: block;
-            height: 540px; 
+            height: 540px;
             border: 1px solid #ddd;
-            background-color: #fff; padding: 15px;
+            background-color: #fff;
+            padding: 15px;
             overflow: hidden;
 
-            & > img{
-                width: 100%; height: auto;                
+            &>img {
+                width: 100%;
+                height: auto;
             }
         }
 
-        a:hover{
+        a:hover {
             color: $colorfullText;
 
-            .infoStyle{
+            .infoStyle {
                 color: #006699
             }
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+    .contentBlock {
+        .itemBlock {
+            .img {
+                height: auto
+            }
+        }
+    }
+
 }

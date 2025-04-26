@@ -1,66 +1,76 @@
 $colorfullText: #f75023;
 
-.contentBlock{
-    display: flex;    
+.contentBlock {
+    display: flex;
     gap: 30px;
     margin-top: 35px;
 
-    & > .imageBlock{
+    &>.imageBlock {
         display: block;
         width: 45%;
         max-width: 100%;
 
-        & > img{
-            width: 100%; height: 100%; object-fit: contain;
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
 
-    & > .infoBlock{
+    &>.infoBlock {
         display: block;
-        width: 55%; max-width: 100%;
+        width: 55%;
+        max-width: 100%;
 
-        & > h3{
+        &>h3 {
             font-family: Righteous;
             font-size: 28px;
             font-weight: 500;
-            margin: 0; color: #666;
+            margin: 0;
+            color: #666;
 
-            & > span{                
+            &>span {
                 font-size: 32px;
                 color: #1eabea
             }
         }
 
-        & > h4{            
+        &>h4 {
             font-size: 28px;
             padding: 10px 0;
-            margin: 0; color: #666;
+            margin: 0;
+            color: #666;
 
-            & > span{
-                font-size: 30px; font-weight: 500;
+            &>span {
+                font-size: 30px;
+                font-weight: 500;
                 color: #1cbe59
             }
         }
 
-        & > h5{
+        &>h5 {
             font-family: Audiowide;
-            font-size: 24px; font-weight: 500;
-            margin: 0; color: #444;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0;
+            color: #444;
 
-            & > span{
+            &>span {
                 color: $colorfullText
             }
         }
 
-        & > p{
+        &>p {
             font-family: Charm;
-            font-size: 20px; font-weight: 500;
+            font-size: 20px;
+            font-weight: 500;
             color: #333
         }
 
-        & > .hireMeBtn > a{
+        &>.hireMeBtn>a {
             text-decoration: none;
-            color: #fff; background-color: $colorfullText;
+            color: #fff;
+            background-color: $colorfullText;
             display: inline-block;
             font-family: Audiowide;
             font-size: 16px;
@@ -71,10 +81,25 @@ $colorfullText: #f75023;
             position: relative;
             overflow: hidden;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 background-color: transparent;
                 color: #313131
             }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentBlock {
+        flex-direction: column;
+
+        &>.imageBlock {
+            width: 100%
+        }
+
+        &>.infoBlock {
+            width: 100%
         }
     }
 }
